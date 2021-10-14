@@ -21,7 +21,8 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 50;
+    z-index: 100;
+    height: 8vh;
     box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);
 }
 
@@ -32,11 +33,22 @@ header > h1 {
 header > nav{
     display: flex;
     margin: 5px;
+    text-transform: uppercase;
 }
 header > nav > li {
     list-style: none;
 }
-
+.burg {
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+.burg > div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: #ffff;
+}
 
 header > nav > li > a {
     display: flex;
@@ -142,7 +154,9 @@ main > section{
 .about-us > p{
     font-size: 1.3em;
 }
-
+.about-us > h2{
+    margin-bottom: 20px;
+}
 .about-us > h2::after{
     content: "";
     height: 5px;
@@ -155,9 +169,15 @@ main > section{
     display: flex;
     flex-direction: column;
 }
-
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 15px;
+    justify-content: center;
+}
 .service > div > h2{
-    margin-top: 15vh;
     font-size: 2em;
     display: flex;
     flex-direction: column;
@@ -211,12 +231,14 @@ main > section{
     opacity: 0.9;
 }
 .only-item > p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    margin: 15px;
 }
 
 .plans{
     padding: 20px;
     align-items: flex-end;
+    justify-content: space-around;
 }
 .travel-plan{
     background: #F0F1F2;
@@ -268,13 +290,19 @@ main > section{
     opacity: 0.9;
 }
 .basic{
-    height: 40%;
+    height: 40vh;
+    margin-left: 5px;
+    margin-bottom: 15px;
 }
 .mediun{
-    height: 60%;
+    height: 60vh;
+    margin-bottom: 15px;
+    margin-left: 5px;
 }
 .premiun{
-    height: 80%;
+    height: 80vh;
+    margin-bottom: 15px;
+    margin-left: 5px;
 }
 
 footer{
@@ -332,6 +360,18 @@ footer > ul > li > a:hover{
 footer > ul > li:hover::after{
     background-color: #115D8C;
 }
+
+@keyframes animationFade {
+   
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /*
 Colors
 #11538C
@@ -342,13 +382,71 @@ Colors
 */
 
 @media (max-width: 768px) {
+    header > nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        top: 7.1vh;
+        width: 100vw;
+        right: 0;
+        height: 94vh;
+        background-color: rgba(0, 0, 0, 0.534);
+        transform: translateX(110vw);
+        transition:  0.3s ease-in;
+    }
+    .nav.active{
+        transform: translateX(0);
+    }
+    .burg.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .burg.active .line2{
+        opacity: 0;
+    }
+    .burg.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    header > nav > li{
+        width: 100%;
+        text-align: center;
+    }
+    header > nav > li > a{
+        width: 100%;
+        height: 50px;
+    }
+    .burg{
+        display: block;
+    }
     main > section{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentation{
+        margin-top: 10vh;
     }
     .informations{
         flex-direction: column;
         padding: 5px;
         height: 80%;
         width: 80%;
+    }
+    .service{
+        margin-bottom: 10px;
+    }
+    .only-item{
+        width: 90%;
+        padding: 15px;
+    }
+    .plans{
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .travel-plan{
+        width: 90%;
     }
 }
