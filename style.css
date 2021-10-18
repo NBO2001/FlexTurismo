@@ -153,6 +153,7 @@ main > section{
 }
 .about-us > p{
     font-size: 1.3em;
+    margin-bottom: 6px;
 }
 .about-us > h2{
     margin-bottom: 20px;
@@ -304,7 +305,21 @@ main > section{
     margin-bottom: 15px;
     margin-left: 5px;
 }
+[data-animation]{
+    opacity: 0;
+    transition: 0.3s;
+}
 
+[data-animation='left']{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-animation='right']{
+    transform: translate3d(50px, 0, 0);
+}
+[data-animation].start-animation{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
 footer{
      display: flex;
      flex: 1;
@@ -393,11 +408,13 @@ Colors
         width: 100vw;
         right: 0;
         height: 94vh;
-        background-color: rgba(0, 0, 0, 0.534);
+        opacity: 0;
         transform: translateX(110vw);
         transition:  0.3s ease-in;
     }
     .nav.active{
+        background-color: rgba(0, 0, 0, 0.534);
+        opacity: 1;
         transform: translateX(0);
     }
     .burg.active .line1{
@@ -425,8 +442,9 @@ Colors
         justify-content: center;
         align-items: center;
     }
-    .presentation{
-        margin-top: 10vh;
+    .sec-presentation{
+        
+        flex-direction: column-reverse;
     }
     .informations{
         flex-direction: column;

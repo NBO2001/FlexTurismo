@@ -28,11 +28,11 @@
 
     <main>
 
-        <section class="background-white">
+        <section class="background-white sec-presentation">
             <div class="presentation">
                 <h1>Flex Turismos</h1>
                 <p>The best for you!</p>
-                <a href="">Saiba Mais!</a>
+                <a href="">Learn More!</a>
             </div>
 
             <img class="conteinner-img" src="./images/0-main.png" alt="banner de apresentação">
@@ -41,10 +41,10 @@
 
         <section class="background-blue" class="presentation">
             
-            <img class="conteinner-img" src="./images/1-quem-somos.png" alt="balcão de atendimento">
+            <img class="conteinner-img" src="./images/1-quem-somos.png" alt="balcão de atendimento" data-animation='left'> 
             
     
-            <div class="about-us">
+            <div class="about-us" data-animation='right'>
                 <h2>About us</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
                 <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
@@ -53,24 +53,24 @@
 
         <section class="background-white service">
 
-            <div class="title">
+            <div class="title"  data-animation='right'>
                 <h2>Service</h2>
             </div>
     
-            <div class="informations">
-                <div class="only-item">
+            <div class="informations"  >
+                <div class="only-item" data-animation='left'>
                     <img src="./images/icon-2.png" alt="hospedagens">
                     <p>Hospedagens</p>
                     <a href="#">Comprar Agora</a>
                 </div>
     
-                <div class="only-item">
+                <div class="only-item"  data-animation='left'> 
                   <img src="./images/icon-1.png" alt="pacote de viagens">
                    <p>Pacotes de viagens</p>
                    <a href="#">Comprar Agora</a>
                 </div>
     
-                <div class="only-item">
+                <div class="only-item"  data-animation='left'>
                     <img src="./images/icon-3.png" alt="roteiros personalizados">
                     <p>Roteiros personalizados</p>
                     <a href="#">Comprar Agora</a>
@@ -82,7 +82,7 @@
 
         <section class="background-blue plans">
 
-            <div class="travel-plan basic">
+            <div class="travel-plan basic"  data-animation='right'>
                 <h3>Plano 2</h3>
                 <ul>
                     <li>Suporte 24h</li>
@@ -92,7 +92,7 @@
                 <a href="#">Saiba Mais!</a>
             </div>
 
-            <div class="travel-plan mediun">
+            <div class="travel-plan mediun"  data-animation='left'>
                 <h3>Plano 2</h3>
                 <ul>
                     <li>Suporte 24h</li>
@@ -104,7 +104,7 @@
                 <a href="#">Saiba Mais!</a>
             </div>
 
-            <div class="travel-plan premiun">
+            <div class="travel-plan premiun"  data-animation='right'>
                 <h3>Plano 3</h3>
                 <ul>
                     <li>Suporte 24h</li>
@@ -136,6 +136,7 @@
     </footer>
 
     <script src="nav-moblie.js"></script>
+    <script src="animation.js"></script>
     
 </body>
 </html>
