@@ -54,7 +54,7 @@ header > nav > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 110px;
+    width: 150px;
     color: #F0F1F2;
     text-decoration: none;
     padding: 5px;
@@ -84,6 +84,7 @@ main > section{
 
 .background-blue{
     background: #0396A6;
+    
 }
 .presentation{
     height: 15rem;
@@ -130,7 +131,7 @@ main > section{
 }
 
 .about-us{
-    color: #F0F1F2;
+    color: #181818;;
     display: flex;
     font-weight: bold;
     flex-direction: column;
