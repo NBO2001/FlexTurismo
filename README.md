@@ -9,3 +9,11 @@ Minhas implentções:
     4º Paleta de cores
 
 [FlexTurismo](https://nbo2001.github.io/FlexTurismo/)
+
+https://user-images.githubusercontent.com/54229396/137825309-4e622031-0889-4158-8b24-8fc195a99f1e.mp4
+
+
+
+
+https://user-images.githubusercontent.com/54229396/137825221-57af0f09-929f-4328-adea-57de689559db.mp4
+
