@@ -2,7 +2,7 @@
 
 O projeto originalmete surgiou em um curso da Digital Innovation One, onde modifiquei algumas coisas.
 
-Minhas implentções:
+Minhas implementações:
 -  Animações CSS
 -  Responsividade
 -  Menu Moblie
